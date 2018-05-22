@@ -10,7 +10,7 @@ public class RollerCoasterTest {
     @Before
     public void before() {
 
-        rollerCoaster = new RollerCoaster("ThunderBall",4,6, 10);
+        rollerCoaster = new RollerCoaster("ThunderBall");
     }
 
     @Test
@@ -21,6 +21,16 @@ public class RollerCoasterTest {
     @Test
     public void canGetPrice(){
         assertEquals(10, rollerCoaster.getPrice());
+    }
+
+    @Test
+    public void canGetMinAge(){
+        assertEquals(6, rollerCoaster.getMinAge());
+    }
+
+    @Test
+    public void canGetMinHeight(){
+        assertEquals(4, rollerCoaster.getMinHeight());
     }
 
 }

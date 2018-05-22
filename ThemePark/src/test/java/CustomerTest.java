@@ -7,13 +7,12 @@ public class CustomerTest {
 
 
         Customer customer1;
-        Customer customer2;
 
         @Before
         public void before() {
 
-            customer1 = new Customer("Phillip", 7, 4, 12);
-            customer2 = new Customer("Andrew", 15, 6, 25);
+            customer1 = new Customer("Phillip", 16, 5, 12);
+
         }
 
 
@@ -24,12 +23,17 @@ public class CustomerTest {
 
     @Test
     public void canGetAge() {
-        assertEquals(7, customer1.getAge());
+        assertEquals(16, customer1.getAge());
     }
 
     @Test
     public void canGetHeight() {
-        assertEquals(4, customer1.getHeight());
+        assertEquals(5, customer1.getHeight());
+    }
+
+    @Test
+    public void canGetMoney() {
+        assertEquals(12, customer1.getMoney());
     }
 
 }

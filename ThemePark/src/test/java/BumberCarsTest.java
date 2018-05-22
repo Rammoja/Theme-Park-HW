@@ -10,7 +10,7 @@ public class BumberCarsTest {
     @Before
     public void before() {
 
-        bumperCars = new BumperCars("Samson", 7);
+        bumperCars = new BumperCars("Samson");
     }
 
     @Test

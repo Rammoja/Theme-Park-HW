@@ -29,6 +29,11 @@ public class Customer {
         return this.height;
     }
 
+    public int getMoney() {
+
+        return this.money;
+    }
+
 
 
 
